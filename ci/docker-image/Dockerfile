@@ -1,4 +1,4 @@
-FROM ubuntu:trusty
+FROM ubuntu:xenial
 
 RUN apt-get update && apt-get install -y \
     build-essential \
@@ -9,6 +9,9 @@ RUN apt-get update && apt-get install -y \
     python \
     zip \
     zlib1g-dev \
+    libssl1.0.0 \
+    libcurl3 \
+    libasound2 \
  && apt-get clean \
  && rm -rf /var/lib/apt/lists/*
 
