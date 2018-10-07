@@ -11,6 +11,7 @@ RUN apt-get update && apt-get install -y \
     zlib1g-dev \
     libssl1.0.0 \
     libcurl3 \
+    libasound \
     libasound2 \
  && apt-get clean \
  && rm -rf /var/lib/apt/lists/*
